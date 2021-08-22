@@ -16,6 +16,7 @@ namespace Chaisher
         public AttendByCode()
         {
             InitializeComponent();
+
         }
         Classes.EmployeeClass emp = new Classes.EmployeeClass();
         Classes.EmployeeTimeAttanceClass atte = new Classes.EmployeeTimeAttanceClass();
