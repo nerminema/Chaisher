@@ -1,4 +1,6 @@
-﻿using System;
+﻿using Chaisher.Cashier;
+using Chaisher.Classes;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -30,6 +32,8 @@ namespace Chaisher
             this.Hide();
         }
         Classes.UserClass user = new Classes.UserClass();
+       
+        ShiftClass shift = new ShiftClass();
         private void btn_Login_Click(object sender, EventArgs e)
         {
             try
@@ -58,11 +62,26 @@ namespace Chaisher
                         else
                         {
 
-                            Cashier.CashFlow f = new Cashier.CashFlow();
+                         int   _id = id;
+                            int? _shiftid = shift.Select(_id);
+                            if (_shiftid == null)
+                            {
+                                shift.InsertShift(DateTime.Now.TimeOfDay, null, _id);
+                                _shiftid = shift.Select(_id);
+                                int shiftID = (int)_shiftid;
+                                Cashier.CashFlow f = new Cashier.CashFlow(shiftID, _id);
 
 
-                            f.Show();
-                            this.Hide();
+                                f.Show();
+                                this.Hide();
+                            }
+                            else
+                            {
+                                Cashier.MainUser user = new MainUser(_id);
+                                user.Show();
+                                this.Hide();
+                            }
+                         
                         }
                     }
                     else

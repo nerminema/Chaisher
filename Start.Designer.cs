@@ -36,22 +36,6 @@ namespace Chaisher
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.pnl_BasicInfo = new System.Windows.Forms.Panel();
-            this.btn_bills = new System.Windows.Forms.Button();
-            this.btn_Balance = new System.Windows.Forms.Button();
-            this.btn_Momsräkningar = new System.Windows.Forms.Button();
-            this.btn_Dagstotaler = new System.Windows.Forms.Button();
-            this.btn_Journalminne = new System.Windows.Forms.Button();
-            this.splitContainer3 = new System.Windows.Forms.SplitContainer();
-            this.splitContainer4 = new System.Windows.Forms.SplitContainer();
-            this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
-            this.lblDate = new System.Windows.Forms.Label();
-            this.lblDay = new System.Windows.Forms.Label();
-            this.lblSecond = new System.Windows.Forms.Label();
-            this.lblTime = new System.Windows.Forms.Label();
-            this.timer1 = new System.Windows.Forms.Timer(this.components);
-            this.timer_basic = new System.Windows.Forms.Timer(this.components);
-            this.btn_basicBtn = new Chaisher.Classes.RoundButton();
             this.roundButton1 = new Chaisher.Classes.RoundButton();
             this.panel1 = new System.Windows.Forms.Panel();
             this.button1 = new System.Windows.Forms.Button();
@@ -67,6 +51,22 @@ namespace Chaisher
             this.btn_changePrice = new System.Windows.Forms.Button();
             this.btn_register = new System.Windows.Forms.Button();
             this.btn_Inventory = new Chaisher.Classes.RoundButton();
+            this.pnl_BasicInfo = new System.Windows.Forms.Panel();
+            this.btn_bills = new System.Windows.Forms.Button();
+            this.btn_Balance = new System.Windows.Forms.Button();
+            this.btn_Momsräkningar = new System.Windows.Forms.Button();
+            this.btn_Dagstotaler = new System.Windows.Forms.Button();
+            this.btn_Journalminne = new System.Windows.Forms.Button();
+            this.btn_basicBtn = new Chaisher.Classes.RoundButton();
+            this.splitContainer3 = new System.Windows.Forms.SplitContainer();
+            this.splitContainer4 = new System.Windows.Forms.SplitContainer();
+            this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
+            this.lblDate = new System.Windows.Forms.Label();
+            this.lblDay = new System.Windows.Forms.Label();
+            this.lblSecond = new System.Windows.Forms.Label();
+            this.lblTime = new System.Windows.Forms.Label();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.timer_basic = new System.Windows.Forms.Timer(this.components);
             this.timer_Product = new System.Windows.Forms.Timer(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
             this.splitContainer1.Panel1.SuspendLayout();
@@ -78,6 +78,8 @@ namespace Chaisher
             this.splitContainer2.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.panel1.SuspendLayout();
+            this.panel2.SuspendLayout();
             this.pnl_BasicInfo.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer3)).BeginInit();
             this.splitContainer3.Panel1.SuspendLayout();
@@ -85,8 +87,6 @@ namespace Chaisher
             this.splitContainer3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer4)).BeginInit();
             this.splitContainer4.SuspendLayout();
-            this.panel1.SuspendLayout();
-            this.panel2.SuspendLayout();
             this.SuspendLayout();
             // 
             // splitContainer1
@@ -140,129 +140,6 @@ namespace Chaisher
             resources.ApplyResources(this.label1, "label1");
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(181)))), ((int)(((byte)(22)))), ((int)(((byte)(42)))));
             this.label1.Name = "label1";
-            // 
-            // pnl_BasicInfo
-            // 
-            this.pnl_BasicInfo.BackColor = System.Drawing.Color.Transparent;
-            this.pnl_BasicInfo.Controls.Add(this.btn_bills);
-            this.pnl_BasicInfo.Controls.Add(this.btn_Balance);
-            this.pnl_BasicInfo.Controls.Add(this.btn_Momsräkningar);
-            this.pnl_BasicInfo.Controls.Add(this.btn_Dagstotaler);
-            this.pnl_BasicInfo.Controls.Add(this.btn_Journalminne);
-            this.pnl_BasicInfo.Controls.Add(this.btn_basicBtn);
-            this.pnl_BasicInfo.Cursor = System.Windows.Forms.Cursors.Hand;
-            resources.ApplyResources(this.pnl_BasicInfo, "pnl_BasicInfo");
-            this.pnl_BasicInfo.Name = "pnl_BasicInfo";
-            // 
-            // btn_bills
-            // 
-            resources.ApplyResources(this.btn_bills, "btn_bills");
-            this.btn_bills.Name = "btn_bills";
-            this.btn_bills.UseVisualStyleBackColor = true;
-            // 
-            // btn_Balance
-            // 
-            resources.ApplyResources(this.btn_Balance, "btn_Balance");
-            this.btn_Balance.Name = "btn_Balance";
-            this.btn_Balance.UseVisualStyleBackColor = true;
-            // 
-            // btn_Momsräkningar
-            // 
-            resources.ApplyResources(this.btn_Momsräkningar, "btn_Momsräkningar");
-            this.btn_Momsräkningar.Name = "btn_Momsräkningar";
-            this.btn_Momsräkningar.UseVisualStyleBackColor = true;
-            // 
-            // btn_Dagstotaler
-            // 
-            resources.ApplyResources(this.btn_Dagstotaler, "btn_Dagstotaler");
-            this.btn_Dagstotaler.Name = "btn_Dagstotaler";
-            this.btn_Dagstotaler.UseVisualStyleBackColor = true;
-            // 
-            // btn_Journalminne
-            // 
-            this.btn_Journalminne.FlatAppearance.BorderSize = 0;
-            resources.ApplyResources(this.btn_Journalminne, "btn_Journalminne");
-            this.btn_Journalminne.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(181)))), ((int)(((byte)(22)))), ((int)(((byte)(42)))));
-            this.btn_Journalminne.Name = "btn_Journalminne";
-            this.btn_Journalminne.UseVisualStyleBackColor = true;
-            this.btn_Journalminne.Click += new System.EventHandler(this.btn_Journalminne_Click);
-            // 
-            // splitContainer3
-            // 
-            resources.ApplyResources(this.splitContainer3, "splitContainer3");
-            this.splitContainer3.FixedPanel = System.Windows.Forms.FixedPanel.Panel2;
-            this.splitContainer3.Name = "splitContainer3";
-            // 
-            // splitContainer3.Panel1
-            // 
-            this.splitContainer3.Panel1.Controls.Add(this.splitContainer4);
-            // 
-            // splitContainer3.Panel2
-            // 
-            this.splitContainer3.Panel2.BackColor = System.Drawing.Color.Black;
-            this.splitContainer3.Panel2.Controls.Add(this.tableLayoutPanel2);
-            this.splitContainer3.Panel2.Controls.Add(this.lblDate);
-            this.splitContainer3.Panel2.Controls.Add(this.lblDay);
-            this.splitContainer3.Panel2.Controls.Add(this.lblSecond);
-            this.splitContainer3.Panel2.Controls.Add(this.lblTime);
-            // 
-            // splitContainer4
-            // 
-            resources.ApplyResources(this.splitContainer4, "splitContainer4");
-            this.splitContainer4.Name = "splitContainer4";
-            // 
-            // tableLayoutPanel2
-            // 
-            resources.ApplyResources(this.tableLayoutPanel2, "tableLayoutPanel2");
-            this.tableLayoutPanel2.Name = "tableLayoutPanel2";
-            // 
-            // lblDate
-            // 
-            resources.ApplyResources(this.lblDate, "lblDate");
-            this.lblDate.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.lblDate.ForeColor = System.Drawing.Color.White;
-            this.lblDate.Name = "lblDate";
-            // 
-            // lblDay
-            // 
-            resources.ApplyResources(this.lblDay, "lblDay");
-            this.lblDay.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.lblDay.ForeColor = System.Drawing.Color.White;
-            this.lblDay.Name = "lblDay";
-            // 
-            // lblSecond
-            // 
-            resources.ApplyResources(this.lblSecond, "lblSecond");
-            this.lblSecond.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.lblSecond.ForeColor = System.Drawing.Color.White;
-            this.lblSecond.Name = "lblSecond";
-            // 
-            // lblTime
-            // 
-            resources.ApplyResources(this.lblTime, "lblTime");
-            this.lblTime.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.lblTime.ForeColor = System.Drawing.Color.White;
-            this.lblTime.Name = "lblTime";
-            // 
-            // timer1
-            // 
-            this.timer1.Interval = 1000;
-            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
-            // 
-            // timer_basic
-            // 
-            this.timer_basic.Interval = 15;
-            this.timer_basic.Tick += new System.EventHandler(this.timer_basic_Tick);
-            // 
-            // btn_basicBtn
-            // 
-            this.btn_basicBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(206)))), ((int)(((byte)(206)))), ((int)(((byte)(206)))));
-            resources.ApplyResources(this.btn_basicBtn, "btn_basicBtn");
-            this.btn_basicBtn.FlatAppearance.BorderSize = 0;
-            this.btn_basicBtn.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(181)))), ((int)(((byte)(22)))), ((int)(((byte)(42)))));
-            this.btn_basicBtn.Name = "btn_basicBtn";
-            this.btn_basicBtn.UseVisualStyleBackColor = false;
-            this.btn_basicBtn.Click += new System.EventHandler(this.btn_basicBtn_Click);
             // 
             // roundButton1
             // 
@@ -384,6 +261,129 @@ namespace Chaisher
             this.btn_Inventory.Name = "btn_Inventory";
             this.btn_Inventory.UseVisualStyleBackColor = false;
             // 
+            // pnl_BasicInfo
+            // 
+            this.pnl_BasicInfo.BackColor = System.Drawing.Color.Transparent;
+            this.pnl_BasicInfo.Controls.Add(this.btn_bills);
+            this.pnl_BasicInfo.Controls.Add(this.btn_Balance);
+            this.pnl_BasicInfo.Controls.Add(this.btn_Momsräkningar);
+            this.pnl_BasicInfo.Controls.Add(this.btn_Dagstotaler);
+            this.pnl_BasicInfo.Controls.Add(this.btn_Journalminne);
+            this.pnl_BasicInfo.Controls.Add(this.btn_basicBtn);
+            this.pnl_BasicInfo.Cursor = System.Windows.Forms.Cursors.Hand;
+            resources.ApplyResources(this.pnl_BasicInfo, "pnl_BasicInfo");
+            this.pnl_BasicInfo.Name = "pnl_BasicInfo";
+            // 
+            // btn_bills
+            // 
+            resources.ApplyResources(this.btn_bills, "btn_bills");
+            this.btn_bills.Name = "btn_bills";
+            this.btn_bills.UseVisualStyleBackColor = true;
+            // 
+            // btn_Balance
+            // 
+            resources.ApplyResources(this.btn_Balance, "btn_Balance");
+            this.btn_Balance.Name = "btn_Balance";
+            this.btn_Balance.UseVisualStyleBackColor = true;
+            // 
+            // btn_Momsräkningar
+            // 
+            resources.ApplyResources(this.btn_Momsräkningar, "btn_Momsräkningar");
+            this.btn_Momsräkningar.Name = "btn_Momsräkningar";
+            this.btn_Momsräkningar.UseVisualStyleBackColor = true;
+            // 
+            // btn_Dagstotaler
+            // 
+            resources.ApplyResources(this.btn_Dagstotaler, "btn_Dagstotaler");
+            this.btn_Dagstotaler.Name = "btn_Dagstotaler";
+            this.btn_Dagstotaler.UseVisualStyleBackColor = true;
+            // 
+            // btn_Journalminne
+            // 
+            this.btn_Journalminne.FlatAppearance.BorderSize = 0;
+            resources.ApplyResources(this.btn_Journalminne, "btn_Journalminne");
+            this.btn_Journalminne.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(181)))), ((int)(((byte)(22)))), ((int)(((byte)(42)))));
+            this.btn_Journalminne.Name = "btn_Journalminne";
+            this.btn_Journalminne.UseVisualStyleBackColor = true;
+            this.btn_Journalminne.Click += new System.EventHandler(this.btn_Journalminne_Click);
+            // 
+            // btn_basicBtn
+            // 
+            this.btn_basicBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(206)))), ((int)(((byte)(206)))), ((int)(((byte)(206)))));
+            resources.ApplyResources(this.btn_basicBtn, "btn_basicBtn");
+            this.btn_basicBtn.FlatAppearance.BorderSize = 0;
+            this.btn_basicBtn.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(181)))), ((int)(((byte)(22)))), ((int)(((byte)(42)))));
+            this.btn_basicBtn.Name = "btn_basicBtn";
+            this.btn_basicBtn.UseVisualStyleBackColor = false;
+            this.btn_basicBtn.Click += new System.EventHandler(this.btn_basicBtn_Click);
+            // 
+            // splitContainer3
+            // 
+            resources.ApplyResources(this.splitContainer3, "splitContainer3");
+            this.splitContainer3.FixedPanel = System.Windows.Forms.FixedPanel.Panel2;
+            this.splitContainer3.Name = "splitContainer3";
+            // 
+            // splitContainer3.Panel1
+            // 
+            this.splitContainer3.Panel1.Controls.Add(this.splitContainer4);
+            // 
+            // splitContainer3.Panel2
+            // 
+            this.splitContainer3.Panel2.BackColor = System.Drawing.Color.Black;
+            this.splitContainer3.Panel2.Controls.Add(this.tableLayoutPanel2);
+            this.splitContainer3.Panel2.Controls.Add(this.lblDate);
+            this.splitContainer3.Panel2.Controls.Add(this.lblDay);
+            this.splitContainer3.Panel2.Controls.Add(this.lblSecond);
+            this.splitContainer3.Panel2.Controls.Add(this.lblTime);
+            // 
+            // splitContainer4
+            // 
+            resources.ApplyResources(this.splitContainer4, "splitContainer4");
+            this.splitContainer4.Name = "splitContainer4";
+            // 
+            // tableLayoutPanel2
+            // 
+            resources.ApplyResources(this.tableLayoutPanel2, "tableLayoutPanel2");
+            this.tableLayoutPanel2.Name = "tableLayoutPanel2";
+            // 
+            // lblDate
+            // 
+            resources.ApplyResources(this.lblDate, "lblDate");
+            this.lblDate.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.lblDate.ForeColor = System.Drawing.Color.White;
+            this.lblDate.Name = "lblDate";
+            // 
+            // lblDay
+            // 
+            resources.ApplyResources(this.lblDay, "lblDay");
+            this.lblDay.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.lblDay.ForeColor = System.Drawing.Color.White;
+            this.lblDay.Name = "lblDay";
+            // 
+            // lblSecond
+            // 
+            resources.ApplyResources(this.lblSecond, "lblSecond");
+            this.lblSecond.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.lblSecond.ForeColor = System.Drawing.Color.White;
+            this.lblSecond.Name = "lblSecond";
+            // 
+            // lblTime
+            // 
+            resources.ApplyResources(this.lblTime, "lblTime");
+            this.lblTime.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.lblTime.ForeColor = System.Drawing.Color.White;
+            this.lblTime.Name = "lblTime";
+            // 
+            // timer1
+            // 
+            this.timer1.Interval = 1000;
+            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
+            // 
+            // timer_basic
+            // 
+            this.timer_basic.Interval = 15;
+            this.timer_basic.Tick += new System.EventHandler(this.timer_basic_Tick);
+            // 
             // timer_Product
             // 
             this.timer_Product.Interval = 15;
@@ -408,6 +408,8 @@ namespace Chaisher
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.panel1.ResumeLayout(false);
+            this.panel2.ResumeLayout(false);
             this.pnl_BasicInfo.ResumeLayout(false);
             this.splitContainer3.Panel1.ResumeLayout(false);
             this.splitContainer3.Panel2.ResumeLayout(false);
@@ -416,8 +418,6 @@ namespace Chaisher
             this.splitContainer3.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer4)).EndInit();
             this.splitContainer4.ResumeLayout(false);
-            this.panel1.ResumeLayout(false);
-            this.panel2.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }

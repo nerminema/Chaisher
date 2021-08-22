@@ -15,23 +15,26 @@ namespace Chaisher.Cashier
     {
         Classes.ProductClass product = new Classes.ProductClass();
         int _prod;
-        public ProductCount( int productID )
+        int? userID;
+        public ProductCount( int productID , int? _userID )
         {
             InitializeComponent();
             List<usp_SelectProductByID_Result> all =product.SelectProductByID(productID);
-
+            userID = _userID;
             _prod = productID;
         }
         bool? _return = null; 
-        public ProductCount(bool returnRec , int productID)
+        public ProductCount(bool returnRec, int? _userID, int productID)
         {
             InitializeComponent();
             _return = returnRec;
+            userID = _userID;
             _prod = productID;
         }
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
             btn_Result.Text = textBox1.Text;
+
         }
 
         private void button5_Click(object sender, EventArgs e)
@@ -61,15 +64,12 @@ namespace Chaisher.Cashier
                     int id = _prod;
             if (_return == null)
             {
-               
-
                 decimal productPRice = (decimal)prod.SelectProductByID(_prod)[0].Price;
-
                 decimal qnty = decimal.Parse(textBox1.Text);
                 if (lbl_orderNo.Text == "")
                 {
 
-                    lbl_orderNo.Text = requested.InsertRequestedOrder(DateTime.Now.Date, null, DateTime.Now.TimeOfDay, "", null, null).ToString();
+                    lbl_orderNo.Text = requested.InsertRequestedOrder(DateTime.Now.Date, userID, DateTime.Now.TimeOfDay, "", null, null).ToString();
                 }
 
                 details.InsertRequestedORderDetails(int.Parse(lbl_orderNo.Text), id, qnty, (decimal)prod.SelectProductByID(id)[0].Price, "");

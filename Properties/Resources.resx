@@ -127,6 +127,9 @@
   <data name="sub" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\sub.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="btn1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\btn1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="username" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\username.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -147,9 +150,6 @@
   </data>
   <data name="btn" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\btn.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Logo" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Logo2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Login" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Login.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -175,6 +175,9 @@
   <data name="if_new-24_1031731" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\if_new-24_1031731.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="UserLogIn" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\UserLogIn.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="Expand Arrow_20px" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Expand Arrow_20px1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -187,14 +190,17 @@
   <data name="DeleteFilled1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\DeleteFilled1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="4288564_banking_business_cash_income_money_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\4288564_banking_business_cash_income_money_icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="Logo1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Logo3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="if_6_-_Cross_1815573" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\if_6_-_Cross_1815573.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="UserLogIn" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\UserLogIn.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Logo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Logo2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="if_excel_272697" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\if_excel_272697.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -211,7 +217,7 @@
   <data name="bg" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\bg.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="btn1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\btn1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="4288564_banking_business_cash_income_money_icon1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\4288564_banking_business_cash_income_money_icon1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

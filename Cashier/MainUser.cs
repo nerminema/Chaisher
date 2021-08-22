@@ -15,18 +15,56 @@ namespace Chaisher.Cashier
     public partial class MainUser : Form
     {
         Classes.CategoryClass cat = new Classes.CategoryClass();
-
+        int? _id;
         Classes.ReqestedORderDetails details = new ReqestedORderDetails();
         Classes.RequestedOrderClass requested = new Classes.RequestedOrderClass();
+        public MainUser(int id )
+        {
+            InitializeComponent();
+            _id = id;
+            try
+            {
+                dg_order.AutoGenerateColumns = false;
+                 List<usp_SelectAllCategory_Result> all = cat.SelectAllCategory();
+                for (int i = 0; i < all.Count; i++)
+                {
+                    RoundButton btn = new RoundButton();
+                    //btn.Dock = DockStyle.Top;
+                    btn.Padding = new Padding(5);
+
+                    btn.Text = all[i].CategoryName;
+                    btn.Tag = all[i].ID;
+                    btn.BackColor = Color.FromArgb(int.Parse(all[i].Color.Trim()));
+
+                    if (all[i].ForeColor != null)
+                        btn.ForeColor = Color.FromArgb(int.Parse(all[i].ForeColor));
+                    // btn.Size = new Size(150, 70);
+                    //btn.Dock = DockStyle.Top;
+                    btn.Margin = new Padding(5, 10, 5, 10);
+                    btn.TextAlign = ContentAlignment.MiddleCenter;
+                    btn.FlatStyle = FlatStyle.Flat;
+                    btn.FlatAppearance.BorderColor = Color.LightGray;
+                    btn.FlatAppearance.BorderSize = 5;
+                    btn.FlatStyle = FlatStyle.Flat;
+                    btn.FlatAppearance.BorderSize = 0;
+                    btn.Location = new Point(0, (i * 105) + 5);
+                    btn.Dock = DockStyle.Top;
+                    pnl_cat.Controls.Add(btn);
+
+                    btn.Click += Btn_Click;
+                }
+            }
+            catch
+            {
+
+            }
+        }
         public MainUser()
         {
             InitializeComponent();
             try
             {
                 dg_order.AutoGenerateColumns = false;
-                //dg_order.DataSource = details.SelectRequestedORderByOrderId(int.Parse(lbl_orderNo.Text));
-                //txt_OrderTotal.Text = ((decimal)details.SelectTotalOrder(int.Parse(lbl_orderNo.Text))).ToString("N2");
-                //lbl_Total.Text = Math.Round(decimal.Parse(txt_OrderTotal.Text), 0).ToString();
                 List<usp_SelectAllCategory_Result> all = cat.SelectAllCategory();
                 for (int i = 0; i < all.Count; i++)
                 {
@@ -191,7 +229,7 @@ namespace Chaisher.Cashier
         {
             Button btn = (Button)sender;
             int ProdID = int.Parse(btn.Tag.ToString());
-            ProductCount count = new ProductCount(ProdID );
+            ProductCount count = new ProductCount(ProdID ,_id );
             count.Show(this);
         }
 
@@ -221,13 +259,13 @@ namespace Chaisher.Cashier
 
         private void roundButton1_Click(object sender, EventArgs e)
         {
-            ProductCount p = new ProductCount( false ,6);
+            ProductCount p = new ProductCount( false ,_id,6 );
             p.Show(this);
         }
 
         private void roundButton2_Click(object sender, EventArgs e)
         {
-            ProductCount p = new ProductCount( true ,7);
+            ProductCount p = new ProductCount( true ,_id,7);
             p.Show(this);
         }
     }

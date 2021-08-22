@@ -5,8 +5,6 @@ VisualStudioVersion = 16.0.29318.209
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Chaisher", "Chaisher.csproj", "{BC2A5FDE-6D92-4D0E-B8D9-23B371B0CB4D}"
 EndProject
-Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "Omran", "..\Omran\Omran.vdproj", "{EFAB5FFD-0FD5-4E8C-B7C9-B814AB5F68E4}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -17,8 +15,6 @@ Global
 		{BC2A5FDE-6D92-4D0E-B8D9-23B371B0CB4D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BC2A5FDE-6D92-4D0E-B8D9-23B371B0CB4D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BC2A5FDE-6D92-4D0E-B8D9-23B371B0CB4D}.Release|Any CPU.Build.0 = Release|Any CPU
-		{EFAB5FFD-0FD5-4E8C-B7C9-B814AB5F68E4}.Debug|Any CPU.ActiveCfg = Debug
-		{EFAB5FFD-0FD5-4E8C-B7C9-B814AB5F68E4}.Release|Any CPU.ActiveCfg = Release
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

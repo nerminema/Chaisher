@@ -304,8 +304,10 @@
     </Compile>
     <Compile Include="Classes\RowMaterialClass.cs" />
     <Compile Include="Classes\ShiftClass.cs" />
+    <Compile Include="Classes\ShiftSettingsClass.cs" />
     <Compile Include="Classes\SuppliersClass.cs" />
     <Compile Include="Classes\SuppliersProductsClass.cs" />
+    <Compile Include="Classes\SystemEmployeeClass.cs" />
     <Compile Include="Classes\UserClass.cs" />
     <Compile Include="ClientAccounts.cs">
       <SubType>Form</SubType>
@@ -734,6 +736,9 @@
     <EmbeddedResource Include="AttendByCode.resx">
       <DependentUpon>AttendByCode.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Cashier\CashFlow.en-US.resx">
+      <DependentUpon>CashFlow.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Cashier\CashFlow.resx">
       <DependentUpon>CashFlow.cs</DependentUpon>
     </EmbeddedResource>
@@ -887,6 +892,8 @@
       <LastGenOutput>Model1.cs</LastGenOutput>
     </Content>
     <None Include="Resources\btn1.png" />
+    <None Include="Resources\4288564_banking_business_cash_income_money_icon.png" />
+    <None Include="Resources\4288564_banking_business_cash_income_money_icon1.png" />
     <Content Include="Resources\expense.png" />
     <Content Include="Resources\filter.png" />
     <Content Include="Resources\finish.png" />
