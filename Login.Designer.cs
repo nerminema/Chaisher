@@ -76,7 +76,7 @@
             // btn_Login
             // 
             this.btn_Login.BackColor = System.Drawing.Color.Transparent;
-            this.btn_Login.BackgroundImage = global::Chaisher.Properties.Resources.btn;
+            this.btn_Login.BackgroundImage = global::Chaisher.Properties.Resources.btn1;
             resources.ApplyResources(this.btn_Login, "btn_Login");
             this.btn_Login.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btn_Login.FlatAppearance.BorderSize = 0;
@@ -145,6 +145,7 @@
             // 
             // Login
             // 
+            this.AcceptButton = this.btn_Login;
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Silver;

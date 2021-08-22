@@ -13,6 +13,17 @@ namespace Chaisher.Admin
 {
     public partial class ProductsList : Form
     {
+        public ProductsList()
+        {
+            InitializeComponent();
+            cmb_Category.DataSource = cat.SelectAllCategory();
+            cmb_Category.DisplayMember = "CategoryName";
+            cmb_Category.ValueMember = "ID";
+            cmb_Category.SelectedIndex = -1;
+
+            dataGridView1.AutoGenerateColumns = false;
+            dataGridView1.DataSource = product.SelectProduct();
+        }
         public ProductsList( string code)
         {
             InitializeComponent();

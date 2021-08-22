@@ -30,7 +30,7 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(RowMaterial));
             this.label2 = new System.Windows.Forms.Label();
-            this.txt_ClientName = new Bunifu.Framework.UI.BunifuMetroTextbox();
+            //this.txt_ClientName = new Textbox();
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.SuspendLayout();
@@ -48,20 +48,20 @@
             // 
             // txt_ClientName
             // 
-            this.txt_ClientName.BorderColorFocused = System.Drawing.Color.Blue;
-            this.txt_ClientName.BorderColorIdle = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.txt_ClientName.BorderColorMouseHover = System.Drawing.Color.Blue;
-            this.txt_ClientName.BorderThickness = 3;
-            this.txt_ClientName.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txt_ClientName.Font = new System.Drawing.Font("Dubai", 12F, System.Drawing.FontStyle.Bold);
-            this.txt_ClientName.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.txt_ClientName.isPassword = false;
-            this.txt_ClientName.Location = new System.Drawing.Point(13, 59);
-            this.txt_ClientName.Margin = new System.Windows.Forms.Padding(4);
-            this.txt_ClientName.Name = "txt_ClientName";
-            this.txt_ClientName.Size = new System.Drawing.Size(364, 44);
-            this.txt_ClientName.TabIndex = 25;
-            this.txt_ClientName.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            //this.txt_ClientName.BorderColorFocused = System.Drawing.Color.Blue;
+            //this.txt_ClientName.BorderColorIdle = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            //this.txt_ClientName.BorderColorMouseHover = System.Drawing.Color.Blue;
+            //this.txt_ClientName.BorderThickness = 3;
+            //this.txt_ClientName.Cursor = System.Windows.Forms.Cursors.IBeam;
+            //this.txt_ClientName.Font = new System.Drawing.Font("Dubai", 12F, System.Drawing.FontStyle.Bold);
+            //this.txt_ClientName.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            //this.txt_ClientName.isPassword = false;
+            //this.txt_ClientName.Location = new System.Drawing.Point(13, 59);
+            //this.txt_ClientName.Margin = new System.Windows.Forms.Padding(4);
+            //this.txt_ClientName.Name = "txt_ClientName";
+            //this.txt_ClientName.Size = new System.Drawing.Size(364, 44);
+            //this.txt_ClientName.TabIndex = 25;
+            //this.txt_ClientName.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             // 
             // button1
             // 
@@ -107,7 +107,7 @@
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.txt_ClientName);
+            //this.Controls.Add(this.txt_ClientName);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "RowMaterial";
             this.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
@@ -122,7 +122,7 @@
         #endregion
 
         private System.Windows.Forms.Label label2;
-        private Bunifu.Framework.UI.BunifuMetroTextbox txt_ClientName;
+        //private Bunifu.Framework.UI.BunifuMetroTextbox txt_ClientName;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
     }

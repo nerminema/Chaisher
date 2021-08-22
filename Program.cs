@@ -16,8 +16,8 @@ namespace Chaisher
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-           // Application.Run(new Chaisher.Admin.Main());
-           Application.Run(new Start());
+            // Application.Run(new Chaisher.Admin.Main());
+            Application.Run(new Login());
         }
     }
 }

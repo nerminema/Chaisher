@@ -66,25 +66,28 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Bunifu.Core">
-      <HintPath>..\..\adeel\Sales-Dashboard-Dark-UI-master\Sales Dashboard Dark UI\bin\Debug\Bunifu.Core.dll</HintPath>
+      <HintPath>E:\Chaisher\Chaisher\bin\Debug\Bunifu.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuButton">
+      <HintPath>E:\Chaisher\Chaisher\bin\Debug\Bunifu.UI.WinForms.BunifuButton.dll</HintPath>
     </Reference>
     <Reference Include="BunifuDataViz">
-      <HintPath>..\..\adeel\Sales-Dashboard-Dark-UI-master\Sales Dashboard Dark UI\bin\Debug\BunifuDataViz.dll</HintPath>
+      <HintPath>E:\Chaisher\Chaisher\bin\Debug\BunifuDataViz.dll</HintPath>
     </Reference>
     <Reference Include="BunifuDataViz 1.0">
-      <HintPath>..\..\adeel\Sales-Dashboard-Dark-UI-master\Sales Dashboard Dark UI\bin\Debug\BunifuDataViz 1.0.dll</HintPath>
+      <HintPath>E:\Chaisher\Chaisher\bin\Debug\BunifuDataViz 1.0.dll</HintPath>
     </Reference>
     <Reference Include="Bunifu_UI_v1.5.3">
-      <HintPath>..\..\adeel\Sales-Dashboard-Dark-UI-master\Sales Dashboard Dark UI\bin\Debug\Bunifu_UI_v1.5.3.dll</HintPath>
+      <HintPath>E:\Chaisher\Chaisher\bin\Debug\Bunifu_UI_v1.5.3.dll</HintPath>
     </Reference>
     <Reference Include="Collections">
-      <HintPath>..\..\Happy Baby\Happy Baby 3_12\Happy_Baby\Happy_Baby\bin\Debug\Collections.dll</HintPath>
+      <HintPath>E:\Core\4- Kinder Park\حضانة   kinder park - V 3\Happy Baby\bin\Debug\Collections.dll</HintPath>
     </Reference>
     <Reference Include="CoreConcept">
-      <HintPath>..\..\Core\حضانات.جديددد\حضانة الكويت اعلي اصدار عربي\Happy Baby\CoreConcept\CoreConcept\bin\Debug\CoreConcept.dll</HintPath>
+      <HintPath>E:\Core\4- Kinder Park\حضانة   kinder park - V 3\Happy Baby\bin\Debug\CoreConcept.dll</HintPath>
     </Reference>
     <Reference Include="CPrinting">
-      <HintPath>..\..\Core\3- Swimming Academy\30-6\Aqua\Happy Baby\bin\Debug\CPrinting.dll</HintPath>
+      <HintPath>E:\Core\4- Kinder Park\حضانة   kinder park - V 3\Happy Baby\bin\Debug\CPrinting.dll</HintPath>
     </Reference>
     <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
       <HintPath>packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
@@ -259,6 +262,12 @@
     </Compile>
     <Compile Include="AttendByCode.Designer.cs">
       <DependentUpon>AttendByCode.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cashier\CashFlow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cashier\CashFlow.Designer.cs">
+      <DependentUpon>CashFlow.cs</DependentUpon>
     </Compile>
     <Compile Include="Cashier\MainUser.cs">
       <SubType>Form</SubType>
@@ -725,6 +734,9 @@
     <EmbeddedResource Include="AttendByCode.resx">
       <DependentUpon>AttendByCode.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Cashier\CashFlow.resx">
+      <DependentUpon>CashFlow.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Cashier\MainUser.en-US.resx">
       <DependentUpon>MainUser.cs</DependentUpon>
     </EmbeddedResource>
@@ -874,6 +886,7 @@
       <DependentUpon>Model1.edmx</DependentUpon>
       <LastGenOutput>Model1.cs</LastGenOutput>
     </Content>
+    <None Include="Resources\btn1.png" />
     <Content Include="Resources\expense.png" />
     <Content Include="Resources\filter.png" />
     <Content Include="Resources\finish.png" />

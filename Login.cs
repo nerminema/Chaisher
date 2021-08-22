@@ -48,13 +48,19 @@ namespace Chaisher
                         int pre = (int)user.SelectUsers(id)[0].prevId;
                         if (pre == 1)
                         {
-                            Admin.Main adminMain = new Admin.Main();
+                            Start adminMain = new Start();
+
+                            
+
                             adminMain.Show();
                             this.Hide();
                         }
                         else
                         {
-                            UserMain f = new UserMain(id);
+
+                            Cashier.CashFlow f = new Cashier.CashFlow();
+
+
                             f.Show();
                             this.Hide();
                         }

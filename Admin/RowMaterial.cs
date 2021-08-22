@@ -24,7 +24,7 @@ namespace Chaisher.Admin
        Classes.RowMaterialClass  rowMaterial = new Classes.RowMaterialClass();
         private void btn_Login_Click(object sender, EventArgs e)
         {
-            rowMaterial.Insert(txt_ClientName.Text);
+          //  rowMaterial.Insert(txt_ClientName.Text);
 
             ComboBox comboBox1 = this.Owner.Controls.Find("comboBox1", true).First() as ComboBox;
             comboBox1.DataSource = rowMaterial.SelectAll();
