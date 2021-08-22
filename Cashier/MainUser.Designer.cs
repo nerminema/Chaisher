@@ -41,25 +41,25 @@ namespace Chaisher.Cashier
             this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.tableLayoutPanel4 = new System.Windows.Forms.TableLayoutPanel();
             this.lbl_Total = new System.Windows.Forms.Label();
             this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
-            this.btn_AddQnty = new System.Windows.Forms.Button();
-            this.btn_sub = new System.Windows.Forms.Button();
             this.txt_OrderTotal = new System.Windows.Forms.TextBox();
             this.splitContainer1 = new System.Windows.Forms.SplitContainer();
             this.tbl_Cat = new System.Windows.Forms.TableLayoutPanel();
             this.pnl_cat = new System.Windows.Forms.Panel();
             this.lbl_orderNo = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.roundButton2 = new Chaisher.Classes.RoundButton();
-            this.roundButton1 = new Chaisher.Classes.RoundButton();
             this.pnl_Product = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.button3 = new System.Windows.Forms.Button();
+            this.button4 = new System.Windows.Forms.Button();
+            this.button5 = new System.Windows.Forms.Button();
+            this.btn_AddQnty = new System.Windows.Forms.Button();
+            this.btn_sub = new System.Windows.Forms.Button();
+            this.roundButton2 = new Chaisher.Classes.RoundButton();
+            this.roundButton1 = new Chaisher.Classes.RoundButton();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer2)).BeginInit();
             this.splitContainer2.Panel1.SuspendLayout();
             this.splitContainer2.Panel2.SuspendLayout();
@@ -158,32 +158,6 @@ namespace Chaisher.Cashier
             this.tableLayoutPanel2.Controls.Add(this.button5, 3, 0);
             this.tableLayoutPanel2.Name = "tableLayoutPanel2";
             // 
-            // button3
-            // 
-            this.button3.BackgroundImage = global::Chaisher.Properties.Resources._4243325_users_people_icon;
-            resources.ApplyResources(this.button3, "button3");
-            this.button3.FlatAppearance.BorderSize = 0;
-            this.button3.Name = "button3";
-            this.button3.UseVisualStyleBackColor = true;
-            this.button3.Click += new System.EventHandler(this.button3_Click);
-            // 
-            // button4
-            // 
-            this.button4.BackgroundImage = global::Chaisher.Properties.Resources.calc;
-            resources.ApplyResources(this.button4, "button4");
-            this.button4.FlatAppearance.BorderSize = 0;
-            this.button4.Name = "button4";
-            this.button4.UseVisualStyleBackColor = true;
-            this.button4.Click += new System.EventHandler(this.button4_Click);
-            // 
-            // button5
-            // 
-            this.button5.BackgroundImage = global::Chaisher.Properties.Resources.Chaisher1;
-            resources.ApplyResources(this.button5, "button5");
-            this.button5.FlatAppearance.BorderSize = 0;
-            this.button5.Name = "button5";
-            this.button5.UseVisualStyleBackColor = true;
-            // 
             // groupBox1
             // 
             this.groupBox1.Controls.Add(this.tableLayoutPanel4);
@@ -209,22 +183,6 @@ namespace Chaisher.Cashier
             this.tableLayoutPanel3.Controls.Add(this.btn_sub, 2, 0);
             this.tableLayoutPanel3.Controls.Add(this.txt_OrderTotal, 1, 0);
             this.tableLayoutPanel3.Name = "tableLayoutPanel3";
-            // 
-            // btn_AddQnty
-            // 
-            this.btn_AddQnty.BackgroundImage = global::Chaisher.Properties.Resources.add1;
-            resources.ApplyResources(this.btn_AddQnty, "btn_AddQnty");
-            this.btn_AddQnty.FlatAppearance.BorderSize = 0;
-            this.btn_AddQnty.Name = "btn_AddQnty";
-            this.btn_AddQnty.UseVisualStyleBackColor = true;
-            // 
-            // btn_sub
-            // 
-            resources.ApplyResources(this.btn_sub, "btn_sub");
-            this.btn_sub.BackgroundImage = global::Chaisher.Properties.Resources.sub;
-            this.btn_sub.FlatAppearance.BorderSize = 0;
-            this.btn_sub.Name = "btn_sub";
-            this.btn_sub.UseVisualStyleBackColor = true;
             // 
             // txt_OrderTotal
             // 
@@ -272,6 +230,59 @@ namespace Chaisher.Cashier
             resources.ApplyResources(this.panel1, "panel1");
             this.panel1.Name = "panel1";
             // 
+            // pnl_Product
+            // 
+            this.pnl_Product.Controls.Add(this.panel2);
+            resources.ApplyResources(this.pnl_Product, "pnl_Product");
+            this.pnl_Product.Name = "pnl_Product";
+            // 
+            // panel2
+            // 
+            resources.ApplyResources(this.panel2, "panel2");
+            this.panel2.Name = "panel2";
+            // 
+            // button3
+            // 
+            this.button3.BackgroundImage = global::Chaisher.Properties.Resources._4243325_users_people_icon;
+            resources.ApplyResources(this.button3, "button3");
+            this.button3.FlatAppearance.BorderSize = 0;
+            this.button3.Name = "button3";
+            this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
+            // 
+            // button4
+            // 
+            this.button4.BackgroundImage = global::Chaisher.Properties.Resources.calc;
+            resources.ApplyResources(this.button4, "button4");
+            this.button4.FlatAppearance.BorderSize = 0;
+            this.button4.Name = "button4";
+            this.button4.UseVisualStyleBackColor = true;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
+            // 
+            // button5
+            // 
+            this.button5.BackgroundImage = global::Chaisher.Properties.Resources.Chaisher1;
+            resources.ApplyResources(this.button5, "button5");
+            this.button5.FlatAppearance.BorderSize = 0;
+            this.button5.Name = "button5";
+            this.button5.UseVisualStyleBackColor = true;
+            // 
+            // btn_AddQnty
+            // 
+            this.btn_AddQnty.BackgroundImage = global::Chaisher.Properties.Resources.add1;
+            resources.ApplyResources(this.btn_AddQnty, "btn_AddQnty");
+            this.btn_AddQnty.FlatAppearance.BorderSize = 0;
+            this.btn_AddQnty.Name = "btn_AddQnty";
+            this.btn_AddQnty.UseVisualStyleBackColor = true;
+            // 
+            // btn_sub
+            // 
+            resources.ApplyResources(this.btn_sub, "btn_sub");
+            this.btn_sub.BackgroundImage = global::Chaisher.Properties.Resources.sub;
+            this.btn_sub.FlatAppearance.BorderSize = 0;
+            this.btn_sub.Name = "btn_sub";
+            this.btn_sub.UseVisualStyleBackColor = true;
+            // 
             // roundButton2
             // 
             this.roundButton2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(225)))), ((int)(((byte)(0)))));
@@ -291,17 +302,6 @@ namespace Chaisher.Cashier
             this.roundButton1.Name = "roundButton1";
             this.roundButton1.UseVisualStyleBackColor = false;
             this.roundButton1.Click += new System.EventHandler(this.roundButton1_Click);
-            // 
-            // pnl_Product
-            // 
-            this.pnl_Product.Controls.Add(this.panel2);
-            resources.ApplyResources(this.pnl_Product, "pnl_Product");
-            this.pnl_Product.Name = "pnl_Product";
-            // 
-            // panel2
-            // 
-            resources.ApplyResources(this.panel2, "panel2");
-            this.panel2.Name = "panel2";
             // 
             // MainUser
             // 

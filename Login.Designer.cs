@@ -30,8 +30,8 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Login));
             this.splitContainer1 = new System.Windows.Forms.SplitContainer();
-            this.panel4 = new System.Windows.Forms.Panel();
             this.btn_Login = new System.Windows.Forms.Button();
+            this.panel4 = new System.Windows.Forms.Panel();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.panel3 = new System.Windows.Forms.Panel();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
@@ -63,16 +63,6 @@
             // 
             resources.ApplyResources(this.splitContainer1.Panel2, "splitContainer1.Panel2");
             // 
-            // panel4
-            // 
-            this.panel4.BackgroundImage = global::Chaisher.Properties.Resources.bg;
-            resources.ApplyResources(this.panel4, "panel4");
-            this.panel4.Controls.Add(this.btn_Login);
-            this.panel4.Controls.Add(this.pictureBox2);
-            this.panel4.Controls.Add(this.panel3);
-            this.panel4.Controls.Add(this.panel2);
-            this.panel4.Name = "panel4";
-            // 
             // btn_Login
             // 
             this.btn_Login.BackColor = System.Drawing.Color.Transparent;
@@ -83,6 +73,16 @@
             this.btn_Login.Name = "btn_Login";
             this.btn_Login.UseVisualStyleBackColor = false;
             this.btn_Login.Click += new System.EventHandler(this.btn_Login_Click);
+            // 
+            // panel4
+            // 
+            this.panel4.BackgroundImage = global::Chaisher.Properties.Resources.bg;
+            resources.ApplyResources(this.panel4, "panel4");
+            this.panel4.Controls.Add(this.btn_Login);
+            this.panel4.Controls.Add(this.pictureBox2);
+            this.panel4.Controls.Add(this.panel3);
+            this.panel4.Controls.Add(this.panel2);
+            this.panel4.Name = "panel4";
             // 
             // pictureBox2
             // 
